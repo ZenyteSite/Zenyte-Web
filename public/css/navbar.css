@@ -1,0 +1,188 @@
+.navbar {
+    background-image: url("../img/navbar.png") !important;
+    background-size: 1078px 106px;
+    width: 1078px;
+    height: 106px;
+    margin: 13px auto 20px auto;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .navbar {
+        background-image: url("../img/navbar@2x.png");
+    }
+}
+.navbar__container {
+    padding: 14px 15px;
+}
+.navbar__items {
+    list-style: none;
+    font-size: 0;
+    display: table;
+    width: 100%;
+}
+.navbar__item {
+    font: 500 normal 21px "Khmer UI";
+    color: #D3B998;
+    display: table-cell;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.35);
+    position: relative;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+.navbar__item--active, .navbar__item:hover {
+    color: #FFE363 !important;
+    text-decoration: none;
+}
+.navbar__item a {
+    color: inherit;
+    padding: 27px 55px 22px;
+    display: block;
+}
+.navbar__item a:hover {
+    color: #FFE363;
+}
+.navbar__item:after {
+    background: url("../img/nav_separator.png") 0 0 no-repeat;
+    background-size: 15px 77px;
+    width: 15px;
+    height: 77px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: -6px;
+    pointer-events: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .navbar__item:after {
+        background-image: url("../img/nav_separator@2x.png");
+    }
+}
+.navbar__item:last-of-type:after {
+    display: none;
+}
+
+
+.top-bar {
+   _filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D81D1714,endColorstr=#D81D1714);
+    width: 100%;
+    height: 44px;
+    box-shadow: inset 0 -2px 0 rgba(21, 17, 15, 0.7), 0 0 12px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.top-bar__links {
+    list-style: none;
+    font-size: 0;
+    margin: 0 -16px;
+}
+
+.top-bar__links li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.top-bar__links--left {
+    float: left;
+}
+
+.top-bar__links--right {
+    float: right;
+}
+
+.top-bar__item {
+    font: 400 normal 14px "Khmer UI";
+    color: #7C6D5C;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+    margin: 0 16px;
+    padding-top: 13px;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.top-bar__item a:hover {
+    text-decoration: none;
+    color: #c9aa71 !important;
+}
+
+.top-bar__item--secondary a:hover {
+    color: #FF8C00 !important;
+}
+
+.top-bar__item:after {
+    background: #473228;
+    width: 5px;
+    height: 5px;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg);transform: rotate(45deg);
+    content: '';
+    display: block;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    bottom: 4px;
+    right: -19px;
+}
+
+.top-bar__item:last-of-type:after {
+    display: none;
+}
+
+.top-bar__item a {
+    color: inherit;
+}
+
+.top-bar__item a:hover {
+    text-decoration: underline;
+}
+
+.top-bar__item--secondary {
+    color: #93B045;
+}
+
+.top-bar:after {
+    background: #473228;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+    left: 0;
+    bottom: 4px;
+    content: '';
+    top: 43px;
+    display: block;
+}
+
+/* makes the alert bubbles prettier :) */
+.top-bar__links .navLink .itemCount {
+    line-height: 14px;
+    height: 13px;
+    top: 2px;
+}
+.top-bar-dropdown ul {
+    position: absolute;
+    z-index: 1;
+    color: #534840 !important;
+    padding-top: 15px;
+    display: none;
+    border-bottom: solid 3px #473228;
+}
+.top-bar-dropdown:hover ul {
+    display: inline;
+}
+.top-bar-dropdown ul li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.top-bar-dropdown ul li a {
+    display: inline-block;
+    min-width: 170px;
+    background: #1E1A16;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+.top-bar-dropdown ul li a:hover {
+    background: #26211C;
+    text-decoration: none;
+}
